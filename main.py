@@ -1,8 +1,13 @@
-#eredmeny
+Jatekoslapok=[]
+Geplapok=[]
+def pontszamitas():
+    Jl=sum(Jatekoslapok)
+    Gl=sum(Geplapok)
 
-def eredmeny(Jpontok,Geppontok):
-    if Jpontok >21:
+#eredmeny
+def eredmeny(Jatekospontok,Geppontok):
+    # teszt esetek
+    if Jatekospontok >21:
         print("vesztett")
     elif Geppontok >21:
         print("vesztett")
-#teszt esetek
