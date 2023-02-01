@@ -1,13 +1,17 @@
-Jatekoslapok=[]
-Geplapok=[]
-def pontszamitas():
-    Jl=sum(Jatekoslapok)
-    Gl=sum(Geplapok)
+
+def pontszamitas(lapok : [list]):
+    lapok=[]
+    osszead=0
+    for i in range(len(lapok)):
+        osszead+=lapok[i]
 
 #eredmeny
-def eredmeny(Jatekospontok,Geppontok):
-    # teszt esetek
-    if Jatekospontok >21:
+def eredmeny(Jatekoslapok:[int],Geplapok:[int]):
+
+    jatekospontok: int = pontszamitas()
+    geppontok: int = pontszamitas()
+    if jatekospontok >21:
         print("vesztett")
-    elif Geppontok >21:
+    elif geppontok >21:
         print("vesztett")
+# teszt esetek
