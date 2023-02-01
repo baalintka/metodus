@@ -1,8 +1,6 @@
 #eredmeny
 
-Jpontok=21
-Geppontok=10
-def eredmeny():
+def eredmeny(Jpontok,Geppontok):
     if Jpontok >21:
         print("vesztett")
     elif Geppontok >21:
